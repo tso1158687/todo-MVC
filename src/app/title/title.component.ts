@@ -7,7 +7,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class TitleComponent implements OnInit {
-  title= '你沒準備好!';
+  title= '你還沒準備好!';
   constructor() { }
 
   ngOnInit() {

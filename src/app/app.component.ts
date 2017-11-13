@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 inputHint= '還有什麼事沒做呢?';
-list: any[]= [];
+list: any[]= [
+{text:"新版鑑別計畫",done:true},
+{text:"學angular",done:false},
+{text:"重灌windows",done:false}
+];
 todo= '';
 filterType = 'All';
 toggleAll= false;
