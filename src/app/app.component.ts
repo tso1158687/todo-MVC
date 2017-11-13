@@ -11,8 +11,16 @@ list: any[]= [];
 todo= '';
 
 addToList() {
-  this.list.push(this.todo);
+  this.list.push({
+    text: this.todo,
+    done: false
+  });
   this.todo = '';
+  console.log(this.list);
 }
 
-}
+clearCompleted() {
+  this.list = this.list.filter(item => {
+    return !item.done;
+  });
+}}
