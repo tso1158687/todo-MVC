@@ -7,7 +7,7 @@ export class FilterPipe implements PipeTransform {
 
   transform(value: any, filterType?: any): any {
     switch (filterType) {
-      case 'Activate':
+      case 'Active':
       console.log(value);
       return value.filter(item => {
         return !item.done; });
@@ -19,7 +19,7 @@ export class FilterPipe implements PipeTransform {
       default:
       return value;
     }
-    return null;
+    // return null;
   }
 
 }

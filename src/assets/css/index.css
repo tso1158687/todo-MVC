@@ -1,3 +1,9 @@
+#bg{
+ position: fixed;
+ top: 0;
+ left: 0;
+
+}
 html,
 body {
 	margin: 0;
@@ -78,7 +84,7 @@ body {
 	font-size: 100px;
 	font-weight: 100;
 	text-align: center;
-	color: rgba(175, 47, 47, 0.15);
+	color: rgba(175, 47, 47, 1);
 	-webkit-text-rendering: optimizeLegibility;
 	-moz-text-rendering: optimizeLegibility;
 	text-rendering: optimizeLegibility;
