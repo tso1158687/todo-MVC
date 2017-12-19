@@ -1,17 +1,8 @@
-#bg{
- position: fixed;
- top: 0;
- left: 0;
 
-}
 html,
 body {
 	margin: 0;
   padding: 0;
-  /* background-image:url(../illidan_mini.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.5; */
 }
 
 button {

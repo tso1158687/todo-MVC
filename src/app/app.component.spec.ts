@@ -1,5 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+declare var jquery: any;
+declare var $: any;
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({

@@ -1,19 +1,22 @@
- <!-- This footer should hidden by default and shown when there are todos -->
- <footer class="footer">
+<!-- This footer should hidden by default and shown when there are todos -->
+<footer class="footer">
   <!-- This should be `0 items left` by default -->
-  <span class="todo-count"><strong>{{list.length}}</strong> item left</span>
+  <span class="todo-count">還有
+    <span>
+      <strong>{{list.length}}</strong>
+    </span> 件事沒準備好</span>
   <!-- Remove this if you don't implement routing -->
   <ul class="filters">
     <li>
-      <a [ngClass]="{'selected':filterType === 'All'}" class="seleted" (click)="changeFilterType('All')">All</a>
+      <a [ngClass]="{'selected':filterType === 'All'}" class="seleted" (click)="changeFilterType('All')">所有</a>
     </li>
     <li>
-      <a [ngClass]="{'selected':filterType === 'Active'}" (click)="changeFilterType('Active')">Active</a>
+      <a [ngClass]="{'selected':filterType === 'Active'}" (click)="changeFilterType('Active')">還在做</a>
     </li>
     <li>
-      <a [ngClass]="{'selected':filterType === 'Completed'}" (click)="changeFilterType('Completed')">Completed</a>
+      <a [ngClass]="{'selected':filterType === 'Completed'}" (click)="changeFilterType('Completed')">做完了</a>
     </li>
   </ul>
   <!-- Hidden if no completed items are left ↓ -->
-  <button class="clear-completed" (click)="clearBtnOnClick()">Clear completed</button>
+  <button class="clear-completed" (click)="clearBtnOnClick()">清除已完成</button>
 </footer>
